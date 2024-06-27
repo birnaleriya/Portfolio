@@ -1,0 +1,88 @@
+/* style.css */
+
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Poppins;
+    line-height: 1.6;
+    color: #16043d;
+    background-color: #f9f9f9;
+}
+
+/* Header Styles */
+
+header {
+    background-color: #150245;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navigation Styles */
+
+nav {
+    background-color: #65d4fc;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: solid;
+    margin: 0 20px;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+/* Image Box Styles */
+
+.image-box {
+    margin: 20px auto;
+    width: 400px;
+    height: 400px;
+    border: 1px solid #ddd;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Dropdown Styles */
+
+label[for="dropdown"] {
+    display: block;
+    margin: 20px;
+}
+
+#dropdown {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+}
