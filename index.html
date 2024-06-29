@@ -10,24 +10,37 @@
 </head>
 
 <body>
+    <style>
+        body {
+            background-image: url(img/background.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+    </style>
     <header>
         <h1>Welcome to the portfolio of Riya Birnale</h1>
     </header>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#resume">Resume</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <button class="custom-button">About</button>
+    <button class="custom-button">Skills</button>
+    <button class="custom-button">Projects</button>
+    <button class="custom-button">Resume</button>
+    <button class="custom-button">Contact</button>
     <div class="image-box">
-        <img src="D:\SelfProjects\Portfolio\myphoto.jpg" alt="Riya Birnale">
+        <img src="img/myphoto.jpg">
+        <label><strong>Riya Birnale</strong></label>
     </div>
-    <label for="dropdown"></label>
-    <select id="dropdown" name="domains">
-        <option value="web-developer">Web-Developer</option>
-        <option value="data scientist">Data Scientist</option>
-    </select>
+    <div class="container">
+        <div class="text-box">
+            <p>Front-end Developer</p>
+        </div>
+        <div class="text-box">
+            <p>App Developer</p>
+        </div>
+        <div class="text-box">
+            <p>Data Scientist</p>
+        </div>
+    </div>
 </body>
 
 </html>

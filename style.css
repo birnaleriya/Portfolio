@@ -12,7 +12,6 @@ body {
     font-family: Poppins;
     line-height: 1.6;
     color: #16043d;
-    background-color: #f9f9f9;
 }
 
 /* Header Styles */
@@ -28,31 +27,54 @@ header h1 {
     margin: 0;
 }
 
-/* Navigation Styles */
-
-nav {
-    background-color: #65d4fc;
-    padding: 10px;
-    text-align: center;
+.custom-button {
+    background-color: #466ace;
+    border: none;
+    /* Remove borders */
+    color: rgb(8, 4, 4);
+    /* White text */
+    padding: 15px 32px;
+    /* Some padding */
+    text-align: justify;
+    /* Center the text */
+    text-decoration-style: bold;
+    /* Remove underline */
+    display: inline-block;
+    /* Get it to display inline */
+    font-size: 16px;
+    /* Increase font size */
+    margin: 4px 2px;
+    /* Some margin */
+    cursor: pointer;
+    /* Pointer/hand icon */
+    border-radius: 12px;
+    /* Rounded corners */
+    transition: background-color 0.3s ease;
+    /* Smooth transition for background color */
 }
 
-nav a {
-    color: #fff;
-    text-decoration: solid;
-    margin: 0 20px;
-}
+.custom-button:hover {
+    background-color: #0c726d;
 
-nav a:hover {
-    color: #ccc;
 }
 
 /* Image Box Styles */
+body {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Poppins;
+    background-color: #f0f0f0;
+}
 
 .image-box {
     margin: 20px auto;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     border: 1px solid #ddd;
+    text-align: center;
+
 }
 
 .image-box img {
@@ -61,19 +83,42 @@ nav a:hover {
     object-fit: cover;
 }
 
-/* Dropdown Styles */
+.label {
+    font-weight: bold;
+    font-size: 50px;
+    font-family: Poppins;
+}
 
-label[for="dropdown"] {
-    display: block;
+.container {
+    display: list-item;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.text-box {
+    background-color: #3c7587;
+    border: 1px solid #032742;
+    border-radius: 10px;
     margin: 20px;
+    padding: 20px;
+    width: 200px;
+    transition: transform 0.3s ease-in-out;
 }
 
-#dropdown {
-    width: 200px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.text-box:hover {
+    transform: scale(1.05);
 }
+
+.text-box h2 {
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.text-box p {
+    font-size: 16px;
+    color: #0a0303;
+}
+
 
 /* Responsive Design */
 
