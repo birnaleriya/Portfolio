@@ -1,14 +1,11 @@
-// Get all buttons with the class "custom-button"
-const buttons = document.querySelectorAll('.custom-button');
+document.addEventListener('DOMContentLoaded', function () {
+    const links = document.querySelectorAll('.nav-link');
+    const currentLocation = location.href;
 
-// Add hover effect to buttons
-buttons.forEach((button) => {
-    button.addEventListener('mouseover', () => {
-        button.style.transform = 'scale(1.1)';
-    });
-
-    button.addEventListener('mouseout', () => {
-        button.style.transform = 'scale(1)';
+    links.forEach(link => {
+        if (link.href === currentLocation) {
+            link.classList.add('active');
+        }
     });
 });
 // Add a random background color to each text box on hover
@@ -23,4 +20,9 @@ textBoxes.forEach((textBox) => {
     textBox.addEventListener('mouseout', () => {
         textBox.style.backgroundColor = '#fff';
     });
+});
+document.addEventListener('DOMContentLoaded', function () {
+    const logo = document.getElementById('logo');
+    // You can add any JavaScript functionality for the logo here.
+    console.log('Logo loaded:', logo.src);
 });
